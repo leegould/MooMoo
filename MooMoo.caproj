@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>MooMoo</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>23300</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+    </used-behaviors>
+    <used-effects>
+        <effect author="Brad Larson" id="toon">Toon</effect>
+    </used-effects>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Keyboard" sid="488444644957841">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Audio" sid="251897931646250">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="LionText" sid="855652506638792">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="673608568521536">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="367487885923835">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="StartupText" sid="906676999696994">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="327685114201641">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="TigerText" sid="973053696267281">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="370642186798364">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Rotate" sid="133538699906934">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="WolfText" sid="421781662101320">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="993903138000327">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="828617733210768">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Toon">
+                    <effect id="toon" />
+                </effect-type>
+            </effects>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="0" />
+        <global-instance type="Audio" uid="1">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="Lion.m4a" />
+        <file name="Lion.ogg" />
+        <file name="Tiger.m4a" />
+        <file name="Tiger.ogg" />
+        <file name="Wolf.m4a" />
+        <file name="Wolf.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
