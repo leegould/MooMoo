@@ -49,12 +49,12 @@
         <event-block sid="146388483939640">
             <conditions>
                 <condition id="2" name="Key is down" sid="359505548400842" type="Keyboard">
-                    <param id="0" name="Key">76 (L)</param>
+                    <param id="0" name="Key">69 (E)</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="630112269337379" type="System">
-                    <param id="0" name="Object to create">LionText</param>
+                    <param id="0" name="Object to create">ElephantText</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">round(random(1280))</param>
                     <param id="3" name="Y">round(random(720))</param>
@@ -67,6 +67,36 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="944231550806174" type="Audio">
+                            <param id="0" name="Audio file">Elephant</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="266961096925860">
+            <conditions>
+                <condition id="2" name="Key is down" sid="501602721738221" type="Keyboard">
+                    <param id="0" name="Key">76 (L)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="254242955357005" type="System">
+                    <param id="0" name="Object to create">LionText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="136069340950005">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="121646152743199" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="760228674533433" type="Audio">
                             <param id="0" name="Audio file">Lion</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>

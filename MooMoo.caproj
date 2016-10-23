@@ -16,6 +16,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
@@ -98,6 +99,17 @@
                 </effect-type>
             </effects>
         </object-type>
+        <object-type name="ElephantText" sid="800893245967827">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="663073609782500">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="268058473040438">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -130,6 +142,8 @@
         <file name="Tiger.ogg" />
         <file name="Wolf.m4a" />
         <file name="Wolf.ogg" />
+        <file name="Elephant.m4a" />
+        <file name="Elephant.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
