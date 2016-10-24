@@ -106,6 +106,36 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="265085679032497">
+            <conditions>
+                <condition id="2" name="Key is down" sid="607740861718992" type="Keyboard">
+                    <param id="0" name="Key">80 (P)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="461929225228369" type="System">
+                    <param id="0" name="Object to create">PigText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="925698322016489">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="877329418638120" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="616370229529842" type="Audio">
+                            <param id="0" name="Audio file">Pig</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="629721051514625">
             <conditions>
                 <condition id="2" name="Key is down" sid="355165116550808" type="Keyboard">

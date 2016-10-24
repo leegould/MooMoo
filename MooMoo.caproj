@@ -110,6 +110,17 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="PigText" sid="451114672865528">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="823441825096930">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="618873355724129">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -144,6 +155,8 @@
         <file name="Wolf.ogg" />
         <file name="Elephant.m4a" />
         <file name="Elephant.ogg" />
+        <file name="Pig.m4a" />
+        <file name="Pig.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
