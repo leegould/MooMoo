@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
@@ -21,6 +22,7 @@
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Scirra" id="scanlines">Scan lines</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
     </used-effects>
     <configurations>
@@ -121,6 +123,27 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="Sprite" sid="578009254007210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="852641966643293" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ZebraText" sid="551509210244147">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="799353923985172">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="ScanLines">
+                    <effect id="scanlines" />
+                </effect-type>
+            </effects>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -157,6 +180,8 @@
         <file name="Elephant.ogg" />
         <file name="Pig.m4a" />
         <file name="Pig.ogg" />
+        <file name="Zebra.m4a" />
+        <file name="Zebra.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

@@ -196,5 +196,35 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="152624357614357">
+            <conditions>
+                <condition id="2" name="Key is down" sid="252418644500876" type="Keyboard">
+                    <param id="0" name="Key">90 (Z)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="675795318927248" type="System">
+                    <param id="0" name="Object to create">ZebraText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="257272908163161">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="385347009709663" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="629573979619328" type="Audio">
+                            <param id="0" name="Audio file">Zebra</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
     </events>
 </c2eventsheet>
