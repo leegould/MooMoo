@@ -49,15 +49,27 @@
         <event-block sid="146388483939640">
             <conditions>
                 <condition id="2" name="Key is down" sid="359505548400842" type="Keyboard">
-                    <param id="0" name="Key">69 (E)</param>
+                    <param id="0" name="Key">68 (D)</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-3" name="Create object" sid="630112269337379" type="System">
-                    <param id="0" name="Object to create">ElephantText</param>
+                    <param id="0" name="Object to create">DogText</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">round(random(1280))</param>
                     <param id="3" name="Y">round(random(720))</param>
+                </action>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="186849567017982" type="DogText">
+                    <param id="0" name="Gravity">-2</param>
+                </action>
+                <action behavior="Physics" id="0" name="Apply force" sid="114951507205232" type="DogText">
+                    <param id="0" name="Force X">random(-20, 20)</param>
+                    <param id="1" name="Force Y">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-20" name="Rotate toward angle" sid="243771211533432" type="DogText">
+                    <param id="0" name="Degrees">random(0, 359)</param>
+                    <param id="1" name="Angle">random(0, 359)</param>
                 </action>
             </actions>
             <sub-events>
@@ -67,10 +79,47 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Play" sid="944231550806174" type="Audio">
+                            <param id="0" name="Audio file">Dog</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="871552296675930">
+            <conditions>
+                <condition id="2" name="Key is down" sid="428491718528688" type="Keyboard">
+                    <param id="0" name="Key">69 (E)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="301341678204868" type="System">
+                    <param id="0" name="Object to create">ElephantText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="996254586921674">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="917474475524223" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="133376891301322" type="Audio">
                             <param id="0" name="Audio file">Elephant</param>
                             <param id="2" name="Loop">0</param>
                             <param id="3" name="Volume">0</param>
                             <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="441447814061640" type="ElephantText">
+                            <param id="0" name="Gravity">20</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="322566202969275" type="ElephantText">
+                            <param id="0" name="Angle">random(0, 359)</param>
+                            <param id="1" name="Distance">random(1, 20)</param>
                         </action>
                     </actions>
                 </event-block>
@@ -88,6 +137,9 @@
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">round(random(1280))</param>
                     <param id="3" name="Y">round(random(720))</param>
+                </action>
+                <action id="3" name="Set font size" sid="313699870173491" type="LionText">
+                    <param id="0" name="Size (pt)">random(36, 72)</param>
                 </action>
             </actions>
             <sub-events>
