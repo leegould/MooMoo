@@ -18,12 +18,12 @@
     <used-behaviors>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
-        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
         <effect author="Scirra" id="scanlines">Scan lines</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
+        <effect author="Scirra" id="warp">Warp</effect>
     </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -80,10 +80,12 @@
                 <behavior-type name="Fade" sid="370642186798364">
                     <behavior id="Fade" />
                 </behavior-type>
-                <behavior-type name="Rotate" sid="133538699906934">
-                    <behavior id="Rotate" />
-                </behavior-type>
             </behaviors>
+            <effects>
+                <effect-type name="Warp">
+                    <effect id="warp" />
+                </effect-type>
+            </effects>
         </object-type>
         <object-type name="WolfText" sid="421781662101320">
             <plugin id="Text" />
@@ -155,6 +157,14 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="BearText" sid="247670514218657">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="560250274450871">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -195,6 +205,8 @@
         <file name="Zebra.ogg" />
         <file name="Dog.m4a" />
         <file name="Dog.ogg" />
+        <file name="Bear.m4a" />
+        <file name="Bear.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>
