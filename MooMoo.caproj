@@ -165,6 +165,17 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="CougarText" sid="776829700913450">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="409716024351259">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="739965135001442">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -207,6 +218,8 @@
         <file name="Dog.ogg" />
         <file name="Bear.m4a" />
         <file name="Bear.ogg" />
+        <file name="Cougar.m4a" />
+        <file name="Cougar.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

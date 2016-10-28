@@ -80,6 +80,43 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="380125240550136">
+            <conditions>
+                <condition id="2" name="Key is down" sid="887044605001902" type="Keyboard">
+                    <param id="0" name="Key">67 (C)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="189774708380054" type="System">
+                    <param id="0" name="Object to create">CougarText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="989049176678054" type="ElephantText">
+                    <param id="0" name="Gravity">35</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="147821532783408" type="ElephantText">
+                    <param id="0" name="Angle">random(0, 70)</param>
+                    <param id="1" name="Distance">random(1, 50)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="367059439179376">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="169547717730879" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="408509372153201" type="Audio">
+                            <param id="0" name="Audio file">Cougar</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="787587380990545">
             <conditions>
                 <condition id="2" name="Key is down" sid="578255464100350" type="Keyboard">
