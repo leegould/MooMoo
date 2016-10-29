@@ -259,6 +259,29 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="482402804667187">
+            <conditions>
+                <condition id="2" name="Key is down" sid="752291797804901" type="Keyboard">
+                    <param id="0" name="Key">83 (S)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="526137185438291" type="System">
+                    <param id="0" name="Object to create">SealText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="113865866190278">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="803442903500416" type="Audio" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="629721051514625">
             <conditions>
                 <condition id="2" name="Key is down" sid="355165116550808" type="Keyboard">

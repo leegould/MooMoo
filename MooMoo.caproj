@@ -176,6 +176,19 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="SealText" sid="830830760097210">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="254464806167493">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Warp">
+                    <effect id="warp" />
+                </effect-type>
+            </effects>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -220,6 +233,7 @@
         <file name="Bear.ogg" />
         <file name="Cougar.m4a" />
         <file name="Cougar.ogg" />
+        <file name="K1181 sealion1.m4a" />
     </sounds-folder>
     <music-folder />
     <files-folder>
