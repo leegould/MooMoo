@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1477518744,
+	"version": 1477794101,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -19,6 +19,12 @@
 		"media/zebra.ogg",
 		"media/dog.m4a",
 		"media/dog.ogg",
+		"media/bear.m4a",
+		"media/bear.ogg",
+		"media/cougar.m4a",
+		"media/cougar.ogg",
+		"media/squirrel.m4a",
+		"media/squirrel.ogg",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
