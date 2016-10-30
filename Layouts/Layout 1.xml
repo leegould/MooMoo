@@ -535,12 +535,12 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SealText" uid="12">
+                <instance type="SquirrelText" uid="12">
                     <properties>
-                        <text>Seal</text>
+                        <text>Squirrel</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Comic Sans MS,-64,400,0</font>
-                        <color>150,150,150</color>
+                        <color>153,51,51</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
@@ -551,32 +551,32 @@
                         <behavior-instance type="Fade">
                             <properties>
                                 <active-at-start>Yes</active-at-start>
-                                <fade-in-time>0</fade-in-time>
+                                <fade-in-time>0.2</fade-in-time>
                                 <wait-time>0</wait-time>
-                                <fade-out-time>1</fade-out-time>
+                                <fade-out-time>2</fade-out-time>
                                 <destroy>After fade out</destroy>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
                     <effect-instances>
-                        <effect-instance type="Warp">
+                        <effect-instance type="Pulse">
                             <parameters>
-                                <x-amplitude>15</x-amplitude>
-                                <x-frequency>15</x-frequency>
-                                <x-speed>3</x-speed>
-                                <y-amplitude>1</y-amplitude>
-                                <y-frequency>5</y-frequency>
-                                <y-speed>0.5</y-speed>
+                                <center-x>0.5</center-x>
+                                <center-y>0.5</center-y>
+                                <frequency>15</frequency>
+                                <intensity>0.2</intensity>
+                                <lighting>0.7</lighting>
+                                <speed>60</speed>
                             </parameters>
                         </effect-instance>
                     </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1410</x>
-                        <y>440</y>
+                        <x>1399</x>
+                        <y>438</y>
                         <z>0</z>
-                        <width>166</width>
+                        <width>267</width>
                         <height>111</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>

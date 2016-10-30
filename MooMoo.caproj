@@ -21,6 +21,7 @@
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
     </used-behaviors>
     <used-effects>
+        <effect author="Danguafer/Silexars" id="pulse">Pulse</effect>
         <effect author="Scirra" id="scanlines">Scan lines</effect>
         <effect author="Brad Larson" id="toon">Toon</effect>
         <effect author="Scirra" id="warp">Warp</effect>
@@ -176,7 +177,7 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-        <object-type name="SealText" sid="830830760097210">
+        <object-type name="SquirrelText" sid="830830760097210">
             <plugin id="Text" />
             <behaviors>
                 <behavior-type name="Fade" sid="254464806167493">
@@ -184,8 +185,8 @@
                 </behavior-type>
             </behaviors>
             <effects>
-                <effect-type name="Warp">
-                    <effect id="warp" />
+                <effect-type name="Pulse">
+                    <effect id="pulse" />
                 </effect-type>
             </effects>
         </object-type>
@@ -233,7 +234,8 @@
         <file name="Bear.ogg" />
         <file name="Cougar.m4a" />
         <file name="Cougar.ogg" />
-        <file name="K1181 sealion1.m4a" />
+        <file name="Squirrel.m4a" />
+        <file name="Squirrel.ogg" />
     </sounds-folder>
     <music-folder />
     <files-folder>

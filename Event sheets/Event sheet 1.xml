@@ -266,8 +266,8 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="526137185438291" type="System">
-                    <param id="0" name="Object to create">SealText</param>
+                <action id="-3" name="Create object" sid="702702066699886" type="System">
+                    <param id="0" name="Object to create">SquirrelText</param>
                     <param id="1" name="Layer">1</param>
                     <param id="2" name="X">round(random(1280))</param>
                     <param id="3" name="Y">round(random(720))</param>
@@ -278,7 +278,14 @@
                     <conditions>
                         <condition id="4" inverted="1" name="Is any playing" sid="803442903500416" type="Audio" />
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="0" name="Play" sid="567310471601590" type="Audio">
+                            <param id="0" name="Audio file">Squirrel</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
