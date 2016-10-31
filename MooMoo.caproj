@@ -190,6 +190,17 @@
                 </effect-type>
             </effects>
         </object-type>
+        <object-type name="GoatText" sid="828029674211220">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="985335329100900">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="906287580121910">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -236,6 +247,7 @@
         <file name="Cougar.ogg" />
         <file name="Squirrel.m4a" />
         <file name="Squirrel.ogg" />
+        <file name="goat2.m4a" />
     </sounds-folder>
     <music-folder />
     <files-folder>

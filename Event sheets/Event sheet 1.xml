@@ -196,6 +196,48 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="463850300934907">
+            <conditions>
+                <condition id="2" name="Key is down" sid="928062620535230" type="Keyboard">
+                    <param id="0" name="Key">71 (G)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="540924469172422" type="System">
+                    <param id="0" name="Object to create">GoatText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+                <action behavior="Physics" id="12" name="Set world gravity" sid="499213263513028" type="GoatText">
+                    <param id="0" name="Gravity">-4</param>
+                </action>
+                <action behavior="Physics" id="0" name="Apply force" sid="734465554850178" type="GoatText">
+                    <param id="0" name="Force X">0</param>
+                    <param id="1" name="Force Y">random(-20,0)</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-20" name="Rotate toward angle" sid="629581704125504" type="GoatText">
+                    <param id="0" name="Degrees">random(0, 359)</param>
+                    <param id="1" name="Angle">random(0, 359)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="689220238178312">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="397133378982441" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="536444249484996" type="Audio">
+                            <param id="0" name="Audio file">Dog</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="266961096925860">
             <conditions>
                 <condition id="2" name="Key is down" sid="501602721738221" type="Keyboard">
