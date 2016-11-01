@@ -238,6 +238,33 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="878074564533393">
+            <conditions>
+                <condition id="2" name="Key is down" sid="305818164812472" type="Keyboard">
+                    <param id="0" name="Key">72 (H)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="886824638633511" type="System">
+                    <param id="0" name="Object to create">HorseText</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">round(random(1280))</param>
+                    <param id="3" name="Y">round(random(720))</param>
+                </action>
+                <action id="-20" name="Rotate toward angle" sid="359318232868799" type="HorseText">
+                    <param id="0" name="Degrees">random(0, 359)</param>
+                    <param id="1" name="Angle">random(315, 25)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="189957735175892">
+                    <conditions>
+                        <condition id="4" inverted="1" name="Is any playing" sid="566085858465521" type="Audio" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="266961096925860">
             <conditions>
                 <condition id="2" name="Key is down" sid="501602721738221" type="Keyboard">

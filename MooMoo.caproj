@@ -16,6 +16,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -198,6 +199,17 @@
                 </behavior-type>
                 <behavior-type name="Physics" sid="906287580121910">
                     <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="HorseText" sid="724324732478228">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="103879385493147">
+                    <behavior id="Fade" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="499459784656506">
+                    <behavior id="Bullet" />
                 </behavior-type>
             </behaviors>
         </object-type>
